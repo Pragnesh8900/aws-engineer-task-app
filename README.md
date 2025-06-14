@@ -76,4 +76,4 @@ Your app uses a .env file with variables (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_K
     - The Docker image is built and pushed to ECR.
 ### 3. Verify in ECR:
  - Go to AWS Management Console > ECR > Repositories > s3-image-display.
- - Confirm the latest tag is updated with your new image.
+ - Confirm the latest tag is updated with your new image. 
