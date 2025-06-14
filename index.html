@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display S3 Image</title>
+  <style>
+    body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f0f0; }
+    img { max-width: 80%; max-height: 80%; }
+  </style>
+</head>
+<body>
+  <img id="s3-image" src="" alt="S3 Image">
+  <script>
+    fetch('/image-url')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('s3-image').src = data.imageUrl;
+      })
+      .catch(error => console.error('Error fetching image URL:', error));
+  </script>
+</body>
+</html>

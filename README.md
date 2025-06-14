@@ -38,6 +38,7 @@ Your app uses a .env file with variables (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_K
  - Add the following secrets from your .env file:
      - **AWS_ACCESS_KEY_ID**: Your AWS IAM Access Key ID
      - **AWS_SECRET_ACCESS_KEY**: Your AWS IAM Secret Access Key
+     - **AWS_ACCOUNT_ID**: Your AWS Account Number
      - **S3_IMAGE_KEY**: Your S3 image key (e.g., my-image.jpg)
  - These secrets are encrypted and accessible only in GitHub Actions workflows.
 
